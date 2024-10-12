@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariage proposal(azoz)</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #dcdcdc;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            font-size: 2.5rem;
+            color: #e91e63;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #yesButton {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        #noButton {
+            background-color: #f44336;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .response {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Will You Marry Me azoz?</h1>
+        <p class="message">I can't imagine my life without you. You make every day better.</p>
+        <button id="yesButton">Yes!</button>
+        <button id="noButton">No!</button>
+        <div id="responseMessage" class="response"></div>
+    </div>
+    <script>
+        document.getElementById('yesButton').addEventListener('click', function() {
+            document.getElementById('responseMessage').innerText = 'Yay! I can’t wait to spend forever with you! 💍';
+        });
+
+        document.getElementById('noButton').addEventListener('click', function() {
+            document.getElementById('responseMessage').innerText = 'That’s okay, I love you no matter what! ❤️';
+        });
+    </script>
+</body>
+</html>
